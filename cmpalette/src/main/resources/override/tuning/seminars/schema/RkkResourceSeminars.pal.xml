@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<schemas xmlns="http://www.intertrust.ru/schema/palette/tn-schema">
+  <schema extends="RkkResource" name="RkkResourceSeminars">
+    <!-- Название вкладки -->
+    <string name="pagename" temporal="true">
+      <calc-values>
+        <script event="open" lang="SPEL"><![CDATA['Семинар']]></script>
+      </calc-values>
+    </string>
+    <!-- Тип документа -->
+    <string name="showIdent" temporal="true">
+      <calc-values>
+        <script event="open" lang="SPEL"><![CDATA['Семинар']]></script>
+      </calc-values>
+    </string>
+    <!-- Название -->
+    <string name="nameSem">
+      <storage-field name="nameSem"/>
+    </string>
+    <!-- Ведущий -->
+    <actor name="author" system="true"/>
+    <!-- Участники -->
+    <actor name="participants" system="true" array="true"/>
+    <!-- Место -->
+    <actor name="place" system="true" array="true"/>
+    <!-- Время -->
+    <datetime name="time" system="true" array="true"/>
+    <!-- Материалы -->
+    <string name="materials">
+      <storage-field name="materials"/>
+    </string>
+
+  </schema>
+</schemas>
