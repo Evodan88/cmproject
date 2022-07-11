@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <schemas xmlns="http://www.intertrust.ru/schema/palette/tn-schema">
   <schema extends="RkkResource" name="RkkResourceWorks">
-    <string name="test" >
+    <string name="showIdent" temporal="true">
+      <calc-values>
+        <script event="open" lang="SPEL"><![CDATA['Научные работы']]></script>
+      </calc-values>
+    </string>
+    <string name="test">
       <storage-field name="test"/>
+    </string>
+    <string name="test2">
+      <storage-field name="test2"/>
     </string>
   </schema>
 </schemas>
